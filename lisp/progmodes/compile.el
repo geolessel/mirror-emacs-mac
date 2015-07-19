@@ -1690,7 +1690,7 @@ Returns the compilation buffer created."
 			   (if (file-remote-p default-directory)
 			       "/bin/sh"
 			     shell-file-name)
-			   nil `("-c" ,command))))
+			   nil `("-cli" ,command))))
 		     (start-file-process-shell-command (downcase mode-name)
 						       outbuf command))))
               ;; Make the buffer's mode line show process state.
